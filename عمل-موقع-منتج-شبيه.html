@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EL FORSAN | اكسسوارات كراسي المكتب</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;900&display=swap');
+        * { font-family: 'Tajawal', sans-serif; }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #3b82f6 100%);
+        }
+        
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .card-hover {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-12px) scale(1.02);
+            box-shadow: 0 25px 50px -12px rgba(59, 130, 246, 0.25);
+        }
+        
+        .whatsapp-btn {
+            background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+            transition: all 0.3s ease;
+        }
+        
+        .whatsapp-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4);
+        }
+        
+        .badge-float {
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+            margin: 15px auto 0;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body class="bg-slate-50">
+
+    <!-- Header ثابت -->
+    <header class="fixed w-full top-0 z-50 glass-effect">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center">
+                        <i class="fas fa-crown text-white text-xl"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-2xl font-black text-white">EL FORSAN</h1>
+                        <p class="text-xs text-blue-100">اكسسوارات كراسي المكتب</p>
+                    </div>
+                <a href="https://wa.me/201554032375" target="_blank" class="whatsapp-btn text-white px-6 py-3 rounded-xl font-bold flex items-center gap-2 shadow-lg">
+                    <i class="fab fa-whatsapp text-xl"></i>
+                    <span class="hidden sm:inline">تواصل واتساب</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient pt-32 pb-20 px-4 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-20 right-20 w-72 h-72 bg-purple-500 rounded-full blur-3xl"></div>
+            <div class="absolute bottom-20 left-20 w-96 h-96 bg-blue-500 rounded-full blur-3xl"></div>
+        </div>
+        
+        <div class="container mx-auto text-center relative z-10">
+            <div class="badge-float inline-block glass-effect px-6 py-2 rounded-full mb-6">
+                <i class="fas fa-shield-alt text-yellow-400"></i>
+                <span class="text-white font-bold mr-2">ضمان 3 شهور على كل المنتجات</span>
+            </div>
+            
+            <h2 class="text-4xl md:text-6xl font-black text-white mb-6 leading-tight">
+                اكسسوارات كراسي المكتب<br>
+                <span class="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">بأعلى جودة</span>
+            </h2>
+            
+            <p class="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+                بواكم، عجل، نجوم، قوالب وكل اللي محتاجه لكرسي مكتبك
+            </p>
+            
+            <div class="flex flex-wrap justify-center gap-4 mb-8">
+                <div class="glass-effect px-6 py-3 rounded-xl">
+                    <i class="fas fa-truck text-green-400 text-xl mb-1"></i>
+                    <p class="text-white font-bold text-sm">توصيل سريع</p>
+                </div>
+                <div class="glass-effect px-6 py-3 rounded-xl">
+                    <i class="fas fa-money-bill-wave text-yellow-400 text-xl mb-1"></i>
+                    <p class="text-white font-bold text-sm">InstaPay متاح</p>
+                </div>
+                <div class="glass-effect px-6 py-3 rounded-xl">
+                    <i class="fas fa-headset text-purple-400 text-xl mb-1"></i>
+                    <p class="text-white font-bold text-sm">دعم 24/7</p>
+                </div>
+            </div>
+            
+            <a href="#products" class="inline-block bg-white text-blue-600 px-8 py-4 rounded-xl font-black text-lg hover:bg-blue-50 transition shadow-2xl">
+                تصفح المنتجات <i class="fas fa-arrow-down mr-2"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- مميزات -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mx-auto mb-3">
+                        <i class="fas fa-award text-blue-600 text-2xl"></i>
+                    </div>
+                    <h4 class="font-bold text-gray-800">جودة عالية</h4>
+                    <p class="text-sm text-gray-500">خامات مستوردة</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center mx-auto mb-3">
+                        <i class="fas fa-tag text-green-600 text-2xl"></i>
+                    </div>
+                    <h4 class="font-bold text-gray-800">أسعار منافسة</h4>
+                    <p class="text-sm text-gray-500">أفضل سعر في السوق</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center mx-auto mb-3">
+                        <i class="fas fa-shield-alt text-purple-600 text-2xl"></i>
+                    </div>
+                    <h4 class="font-bold text-gray-800">ضمان 3 شهور</h4>
+                    <p class="text-sm text-gray-500">على كل المنتجات</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-orange-100 rounded-2xl flex items-center justify-center mx-auto mb-3">
+                        <i class="fas fa-bolt text-orange-600 text-2xl"></i>
+                    </div>
+                    <h4 class="font-bold text-gray-800">توصيل سريع</h4>
+                    <p class="text-sm text-gray-500">خلال 48 ساعة</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products -->
+    <section id="products" class="py-20 bg-gradient-to-b from-slate-50 to-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <span class="text-blue-600 font-bold">منتجاتنا</span>
+                <h3 class="text-4xl font-black text-gray-900 mt-2 section-title">اختر من أفضل الاكسسوارات</h3>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- منتج 1 -->
+                <div class="bg-white rounded-3xl shadow-xl overflow-hidden card-hover border border-gray-100">
+                    <div class="h-72 bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center relative overflow-hidden">
+                        <div class="absolute top-4 right-4 bg-red-500 text-white px-3 py-1 rounded-full text-xs font-bold">
+                            الأكثر مبيعاً
+                        </div>
+                        <i class="fas fa-image text-7xl text-gray-300"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 mb-2">
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <span class="text-sm text-gray-500">(124)</span>
+                        </div>
+                        <h4 class="text-xl font-bold mb-2 text-gray-900">باكم أسود 100 مللي</h4>
+                        <p class="text-gray-600 mb-4 text-sm">باكم هيدروليك أسود عالي الجودة - يتحمل حتى 150 كجم</p>
+                        <div class="flex justify-between items-center pt-4 border-t border-gray-100">
+                            <div>
+                                <span class="text-sm text-gray-400 line-through">180 ج.م</span>
+                                <p class="text-3xl font-black text-blue-600">150 ج.م</p>
+                            </div>
+                            <a href="https://wa.me/201554032375?text=عايز%20اطلب%20باكم%20أسود%20100%20مللي%20بـ150ج" target="_blank" class="whatsapp-btn text-white px-6 py-3 rounded-xl font-bold shadow-lg">
+                                <i class="fab fa-whatsapp"></i> اطلب
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- منتج 2 -->
+                <div class="bg-white rounded-3xl shadow-xl overflow-hidden card-hover border border-gray-100">
+                    <div class="h-72 bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
+                        <i class="fas fa-image text-7xl text-gray-300"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 mb-2">
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <span class="text-sm text-gray-500">(89)</span>
+                        </div>
+                        <h4 class="text-xl font-bold mb-2 text-gray-900">باكم نيكل 100 مللي</h4>
+                        <p class="text-gray-600 mb-4 text-sm">باكم هيدروليك نيكل لامع - شكل أنيق وجودة عالية</p>
+                        <div class="flex justify-between items-center pt-4 border-t border-gray-100">
+                            <div>
+                                <p class="text-3xl font-black text-blue-600">170 ج.م</p>
+                            </div>
+                            <a href="https://wa.me/201554032375?text=عايز%20اطلب%20باكم%20نيكل%20100%20مللي%20بـ170ج" target="_blank" class="whatsapp-btn text-white px-6 py-3 rounded-xl font-bold shadow-lg">
+                                <i class="fab fa-whatsapp"></i> اطلب
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- منتج 3 -->
+                <div class="bg-white rounded-3xl shadow-xl overflow-hidden card-hover border border-gray-100">
+                    <div class="h-72 bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
+                        <i class="fas fa-image text-7xl text-gray-300"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 mb-2">
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                           
